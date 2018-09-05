@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.ldh.android.satellitelayout.ArcMenuLayout
+        android:id="@+id/arcmenu_layout"
+        android:layout_width="700px"
+        android:layout_height="350px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="138px"
+            android:layout_height="80px"
+            android:background="@mipmap/ic_control_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_control_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:src="@mipmap/ic_arc_collapse"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:tag="Menu_Setting">
+
+            <ImageView
+                android:layout_width="66px"
+                android:layout_height="66px"
+                android:src="@drawable/bg_setting"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="设置"
+                android:textColor="#a7b5cd"
+                android:textSize="30px"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:tag="Menu_Discuss">
+
+            <ImageView
+                android:layout_width="66px"
+                android:layout_height="66px"
+                android:src="@drawable/bg_discuss"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="讨论"
+                android:textColor="#a7b5cd"
+                android:textSize="30px"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:tag="Menu_Question">
+
+            <ImageView
+                android:layout_width="66px"
+                android:layout_height="66px"
+                android:src="@drawable/bg_question"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="提问"
+                android:textColor="#a7b5cd"
+                android:textSize="30px"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:tag="Menu_HandsUp">
+
+            <ImageView
+                android:layout_width="66px"
+                android:layout_height="66px"
+                android:src="@drawable/bg_hands_up"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="举手"
+                android:textColor="#a7b5cd"
+                android:textSize="30px"/>
+
+        </LinearLayout>
+
+
+    </com.ldh.android.satellitelayout.ArcMenuLayout>
+
+</RelativeLayout>
